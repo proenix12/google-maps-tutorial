@@ -1,70 +1,477 @@
 <!doctype html>
-<html lang = "en">
-<head>
-    <meta charset = "UTF-8">
-    <meta name = "viewport"
-          content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
-    <title>Document</title>
-    <link rel = "stylesheet" type = "text/css" href = "theme.css">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Materialize CSS article template</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
     <!-- Compiled and minified CSS -->
-    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Compiled and minified JavaScript -->
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-</head>
-<body>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.collapsible');
-        var instances = M.Collapsible.init(elems);
-    });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="theme.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+  <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          var elems = document.querySelectorAll('.collapsible');
+          var instances = M.Collapsible.init(elems);
+      });
 
-    // Or with jQuery
+      // Or with jQuery
 
-    $(document).ready(function () {
-        $('.collapsible').collapsible();
-    });
-</script>
-<div class = "wrap">
-    <h1>Google</h1>
+      $(document).ready(function () {
+          $('.collapsible').collapsible();
+      });
+      $(document).ready(function () {
+          $('.materialboxed').materialbox();
+      });
+  </script>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Goliveuk/a>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="demo-ribbon"></div>
+      <div class="demo-layout">
+        <main class="demo-main">
+          <div class="demo-container">
+            <div class=""></div>
+            <div class="demo-content card-panel col s12 m8 offset-m2">
+              <div class="demo-crumbs">
+                  Google Console / Map API Tutorials
+              </div>
+              <div>
 
-    <ul class = "collapsible">
-        <li>
-            <div class = "collapsible-header">Create new project in google console</div>
-            <div class = "collapsible-body">
-                <div class = "step1">
-                    <h4>To create a new project:</h4>
-                    <p><span>1)</span> Go to the GCP Console <a
-                            href = "https://console.cloud.google.com/cloud-resource-manager?_ga=2.3929136.-1657078312.1538488034">Manage
-                        resources</a> page.</p>
-                    <p><a class = "waves-effect waves-light btn-small">GO TO THE MANAGE RESOURCES PAGE</a></p>
-                    <p><span>2)</span> On the drop-down at the top of the page, select the organization in which you
-                        want to create
-                        a project.</p>
-                    <p><span>3)</span> Click Create Project</p>
-                    <p><span>4)</span> In the New Project window that appears, enter a project name and select a billing
-                        account as
-                        applicable.</p>
-                    <p><span>5)</span> If you want to add the project to a folder, enter the folder name in the Location
-                        box.</p>
-                    <p><span>6)</span> When you're finished entering new project details, click Create.</p>
-                </div>
+                <ul class="collapsible">
+                  <li>
+                    <div class="collapsible-header">Create new project in google console</div>
+                    <div class="collapsible-body">
+                      <div class="step1">
+                        <h4>To create a new project:</h4>
+                        <ol>
+                          <li class="list">Go to the GCP Console <a
+                                  href="https://console.cloud.google.com/cloud-resource-manager?_ga=2.3929136.-1657078312.1538488034">Manage
+                            resources</a> page.
+                          </li>
+                          <li class="list"><a href="https://console.cloud.google.com/cloud-resource-manager?_ga=2.101013057.-1736620504.1538528917" class="button button-primary" target="console">GO TO THE MANAGE RESOURCES PAGE</a></li>
+                          <li class="list">On the drop-down at the top of the page, select the organization in which you
+                            want to create
+                            a project.
+                          </li>
+                          <li class="list">Click Create Project</li>
+                          <li class="list">In the New Project window that appears, enter a project name and select a
+                            billing
+                            account as
+                            applicable.
+                          </li>
+                          <li class="list">If you want to add the project to a folder, enter the folder name in the
+                            Location
+                            box.
+                          </li>
+                          <li class="list">When you're finished entering new project details, click Create.</li>
+                        </ol>
+                        <h3>Gallery</h3>
+                        <div class="clearfix">
+                          <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park"
+                               width="250" src="https://lorempixel.com/800/400/nature/4">
+                          <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park"
+                               width="250" src="https://lorempixel.com/800/400/nature/4">
+                          <img class="materialboxed" data-caption="A picture of a way with a group of trees in a park"
+                               width="250" src="https://lorempixel.com/800/400/nature/4">
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header">Google Maps JavaScript API</div>
+                    <div class="collapsible-body">
+                      <div class="step2">
+                        <ol>
+                          <li class="list">Go to the Google <a
+                                  href="https://cloud.google.com/console/google/maps-apis/overview">Cloud Platform
+                            Console.</a></li>
+                          <li class="list">Create or select a project.</li>
+                          <li class="list">Click <strong>Continue</strong> to enable the API and any related services.
+                          </li>
+                          <li class="list">On the <strong>Credentials</strong> page, get an <strong>API key</strong>.<p>
+                            Note: If you have an existing unrestricted API key, or a key with browser restrictions, you
+                            may use that key.</p></li>
+                          <li class="list">From the dialog displaying the API key, select <strong>Restrict key</strong> to
+                            set a browser restriction on the API key.
+                          </li>
+                          <li class="list">In the <strong>Key restriction</strong> section, select <strong>HTTP referrers
+                            (web sites)</strong>, then follow the on-screen instructions to set referrers.
+                          </li>
+                          <li class="list">(Optional) Enable billing. See <a
+                                  href="https://developers.google.com/maps/documentation/javascript/usage">Usage
+                            Limits</a> for more information.
+                          </li>
+                        </ol>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header">Restricting an API key</div>
+                    <div class="collapsible-body">
+                      <p>Google Maps APIs are available for web browsers, Android or iOS apps, and via HTTP web services. APIs
+                        in
+                        any platform can use a generic (unrestricted) API key. You can optionally add a restriction (for
+                        example, HTTP referrer) to the API key. Once restricted, a key will only work on platforms that
+                        support
+                        that type of restriction.</p>
+
+                        <div class="alert info">
+                            <label class="close" title="close" for="alert3">
+                                <i class="icon-remove"></i>
+                            </label>
+                            <p class="inner"><span>
+<strong>Tip:</strong> Before moving your app or website to production, you should secure your API
+                        key. Keys for the Maps
+                        JavaScript API use the <strong>HTTP referrers (web sites)</strong> key restriction.
+                        <a href="https://developers.google.com/maps/faq#keysystem">Learn more about keys and
+                          credentials.</a>
+                        </span>
+                            </p>
+                        </div>
+
+                      <p>To add web browser restrictions to an existing, generic API key, do the following:</p>
+
+                      <ol>
+                        <li class="list">Go to the Credentials page of the <a
+                                href="https://console.cloud.google.com/project/_/apiui/credential">Google Cloud Platform
+                          Console.</a></li>
+                        <li class="list">Select the project that contains the API key you want to edit.</li>
+                        <li class="list">On the
+                          <string>Credentials</string>
+                          page, from the list of API keys, select the name of the API key to edit the details of the key.
+                        </li>
+                        <li class="list">In the
+                          <string>Key restriction</string>
+                          section of the page, select <strong>HTTP referrers (web sites)</strong>, follow the on-screen
+                          instructions to set referrers, then click <strong>Save</strong>.
+                        </li>
+                      </ol>
+
+                      <p><strong>Note:</strong> file:// referers need a special representation to be added to the Key
+                        restriction. The "file:/"
+                        part should be replaced with "__file_url__" before being added to the Key restriction. For example,
+                        "file:///path/to/" should be formatted as "__file_url__//path/to/*". After enabling file://
+                        referers, it is recommended you regularly check your usage, to make sure it matches your
+                        expectations. </p>
+                    </div>
+                  <li>
+                    <div class="collapsible-header">Managing Roles and Permissions</div>
+                    <div class="collapsible-body">
+                      <h4>Granting, Changing, and Revoking Access to Resources</h4>
+                      <p>This page describes how to grant, change, and revoke access to a resource. You can grant varying
+                        levels of access for resources you own to different users by using fine-grained Cloud IAM roles.</p>
+                      <p>You can manage user roles with the GCP Console, the gcloud command-line tool, the REST API, or the
+                        <a href="https://cloud.google.com/iam/docs/quickstart-client-libraries">client libraries.</a> Using
+                        the GCP Console is the easiest method and is covered in the first half of
+                        this article. Using programmatic methods for more complex scenarios is covered later on.</p>
+                      <p>If you want to use Cloud IAM with Cloud Identity-Aware Proxy (Cloud IAP) to secure access to your
+                        applications, see the <a href="https://cloud.google.com/iap/docs/">Cloud IAP documentation</a>.</p>
+                      <h5>Before you begin</h5>
+                      <ol>
+                        <li class="list">Read about the <a href="https://google.secure.force.com/">available Cloud IAM
+                          roles</a>.
+                        </li>
+                      </ol>
+                      <h5>Using the GCP Console</h5>
+                      <p>Using the GCP Console is a quick and easy way to manage user roles. When you grant a user a role,
+                        they won't receive an invite email. Their access is updated directly.</p>
+                      <h5>Grant access</h5>
+                      <p>To add a team member to a project and grant them a Cloud IAM role:</p>
+                      <ol>
+                        <li class="list">Open the IAM page in the GCP Console.</li>
+                        <li class="list"><a class="button button-primary"
+                                            href="https://console.cloud.google.com/iam-admin/iam?_ga=2.135207537.-1736620504.1538528917"
+                                            target="console" track-type="task" track-name="consoleLink"
+                                            track-metadata-position="body" track-metadata-end-goal="addPermissions">Open
+                          the IAM page</a></li>
+                        <li class="list">Click <strong>Select a project</strong>, choose a project, and click
+                          <strong>Open</strong>s.
+                        </li>
+                        <li class="list">Click <strong>Add</strong>.</li>
+                        <li class="list">Enter an email address. You can add individuals, service accounts, or Google Groups
+                          as members, but every project must have at least one individual as a member.
+                        </li>
+                        <li class="list">Select a role. Roles give members the appropriate level of permission. We recommend
+                          giving the member the least amount of privilege needed. Members with Owner-level permissions are
+                          also project owners and can manage all aspects of the project, including shutting it down.
+                        </li>
+                        <li class="list">Click Save.</li>
+                      </ol>
+                      <p>To grant a role to a member for more than one project:</p>
+                      <ol>
+                        <li class="list">Open the IAM & Admin Projects page in the GCP Console.</li>
+                        <li class="list"><a class="button button-primary"
+                                            href="https://console.cloud.google.com/iam-admin/projects?_ga=2.108542786.-1736620504.1538528917"
+                                            target="console" track-type="task" track-name="consoleLink"
+                                            track-metadata-position="body" track-metadata-end-goal="addPermissions">Open
+                          the IAM &amp; Admin Projects page</a></li>
+                        <li class="list">
+                          Select all the projects for which you want to grant permissions.
+                        </li>
+                        <li class="list">
+                          Click the <strong>Show Info Panel</strong>, followed by the <strong>Permissions</strong> tab.
+                        </li>
+                        <li class="list">
+                          Enter an email address in the <strong>Add members</strong> field, and select the desired role
+                          from the dropdown menu.
+                        </li>
+                        <li class="list">
+                          Click the <strong>Add</strong> button. The member will be granted the selected role in each of
+                          the selected projects.
+                        </li>
+                      </ol>
+                      <p>Revoke access</p>
+                      <ol>
+                        <li class="list">Open the <strong>IAM</strong> page in the Google Cloud Platform Console.</li>
+                        <li class="list"><a class="button button-primary"
+                                            href="https://console.cloud.google.com/iam-admin/iam?_ga=2.172498787.-1736620504.1538528917"
+                                            target="console" track-type="task" track-name="consoleLink"
+                                            track-metadata-position="body" track-metadata-end-goal="addPermissions">Open the
+                          IAM page</a></li>
+                        <li class="list">Click <strong>Select a project</strong>.</li>
+                        <li class="list">Locate the member for whom you want to revoke access, and then click the
+                          <strong>Edit</strong> <span class="material-icons">edit</span> button on the right.
+                        </li>
+                        <li class="list">Click the <strong>Delete</strong> <span class="material-icons">delete</span> button
+                          for
+                          each role you want to revoke, and then click <strong>Save</strong>.
+                        </li>
+                      </ol>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header">Manage Billing Accounts</div>
+                    <div class="collapsible-body">
+                      <h5>Create, Modify, or Close Your Billing Account </h5>
+                      <p>Use the Cloud Platform Console to create billing accounts and configure your
+                        project billing settings. The following topics explain how to set up your
+                        billing account and verify your email address.</p>
+                      <div class="alert info">
+
+                        <label class="close" title="close" for="alert3">
+                          <i class="icon-remove"></i>
+                        </label>
+                        <p class="inner">
+                          <strong>Note:</strong><span> To manage billing accounts and to add projects to them, you must be a
+                        billing administrator. (By default, account owners are billing administrators.)
+                        For information about billing administrators and billing permissions, see <a
+                                  href="https://cloud.google.com/billing/docs/how-to/billing-access">Overview of Access Control</a>. For
+                        information about Google API pricing, refer to the documentation for the
+                        API you're using. For information about Google Cloud Platform pricing and the
+                        Google Cloud Platform free trial, see <a href="https://cloud.google.com/pricing/">Pricing</a>.
+                    </span>
+                        </p>
+                      </div>
+                      <h5>Create a new billing account</h5>
+                      <p>To create a new billing account:</p>
+                      <ol>
+                        <li class="list">Go to the <a
+                                href="https://console.cloud.google.com/?_ga=2.209092178.-1736620504.1538528917">Google
+                          Cloud Platform</a> Console and sign in or, if you don't already have
+                          an account, sign up.
+                        </li>
+                        <li class="list">
+                          Open the console left side menu and select <strong>Billing</strong>.
+                        </li>
+                        <li class="list">
+                          Click the <strong>New billing account</strong> button. (Note that if this is not your first
+                          billing account,
+                          first you need to open the billing account list by clicking the name of your existing
+                          billing account near the top of the page, and then clicking <strong>Manage billing</strong>
+                          accounts.)
+                        </li>
+                        <li class="list">
+                          Enter the name of the billing account and enter your billing information. The options you
+                          see depend on the country of your billing address. Note that for United States accounts, you
+                          cannot change tax status after the account is created.
+                        </li>
+                        <li class="list">
+                          Click <strong>Submit and enable billing</strong>.
+                        </li>
+                      </ol>
+                      <p>By default, the person who creates the billing account is a billing administrator for the
+                        account.</p>
+                      <div class="alert info">
+                        <label class="close" title="close" for="alert3">
+                          <i class="icon-remove"></i>
+                        </label>
+                        <p class="inner"><span>
+                        <strong>Note:</strong> After setting up your account, you might notice a $0.00 transaction from
+                        Google which is a pending authorization request between our billing system and the bank that
+                        issued your credit or debit card. In some countries, authorizations are $1 (which might be
+                        converted to local currency by your bank). These transactions might appear as pending on your
+                        statement for up to a month. Please keep in mind they are authorization requests only, not
+                        actual charges. If you have questions, we recommend you contact your bank about the
+                        authorization status.
+                        </span>
+                        </p>
+                      </div>
+                      <p>For information about verifying bank accounts, see
+                        <a href="https://cloud.google.com/billing/docs/how-to/verify-bank">Verify Your Bank Account</a>. For
+                        information
+                        about adding backup methods of payment, see
+                        <a href="https://cloud.google.com/billing/docs/how-to/payment-methods">Add, remove, or update a
+                          payment method</a>.</p>
+                      <div class="alert info">
+                        <label class="close" title="close" for="alert3">
+                          <i class="icon-remove"></i>
+                        </label>
+                        <p class="inner"><span>
+                        <strong>Note:</strong> If you haven't already verified your email address, you might need to do so before you
+                        can begin using the new billing account.
+                        </span>
+                        </p>
+                      </div>
+                      <h5>Verify your email address</h5>
+                      <p>To ensure you receive billing related notifications, we might ask you to verify your email
+                        address.</p>
+                      <p>To verify your email address, look for a verification email in the Inbox for the email address you
+                        used as your billing account <strong>Primary contact</strong>, and then click the verification link
+                        in the email to
+                        activate your billing account.</p>
+                      <p>If you haven't received the verification email, here's how to request a new verification link:</p>
+                      <ol>
+                        <li class="list">Go to the <a
+                                href="https://console.cloud.google.com/?_ga=2.226393818.-1736620504.1538528917">Google Cloud
+                          Platform Console</a>.
+                        </li>
+                        <li class="list">
+                          Open the console left side menu and select <strong>Billing</strong>.
+                        </li>
+                        <li class="list">
+                          If you have more than one billing account, select <strong>Go to linked billing account</strong>
+                          to manage the
+                          current project's billing. To locate a different billing account, select <strong>Manage billing
+                          accounts</strong>.
+                        </li>
+                        <li class="list">
+                          On the left, click <strong>Profile</strong>.
+                        </li>
+                        <li class="list">
+                          Under <strong>Billing contacts</strong>, find the email address you want to verify and click
+                          <strong>Resend verification email</strong>. Note that if the email address has already been
+                          verified, this link is not available.
+                        </li>
+                      </ol>
+                      <p>Until an email address is verified, you'll see the error "Your primary billing contact isn't
+                        receiving critical notifications" in Billing.</p>
+                      <h5>Change the billing address</h5>
+                      <ol>
+                        <li class="list">Go to the <a
+                                href="https://console.cloud.google.com/?_ga=2.162298620.-1736620504.1538528917">
+                          Google Cloud Platform Console</a>.
+                        </li>
+                        <li class="list">Open the console left side menu and select <strong>Billing</strong>.</li>
+                        <li class="list">If you have more than one billing account, select <strong>Go to linked billing
+                          account</strong> to
+                          manage the current project's billing. To locate a different billing account, select <strong>Manage
+                            billing accounts</strong>.
+                        </li>
+                        <li class="list">On the left, click <strong>Payment settings</strong>.</li>
+                        <li class="list">Next to <strong>Available payment methods</strong>, click <strong>Edit</strong>.
+                        </li>
+                        <li class="list">Under <strong>Billing Address</strong> click the current address, and then scroll
+                          down and click <strong>Add a new address</strong>.
+                        </li>
+                        <li class="list">Enter the new billing address information and click <strong>Save</strong>.</li>
+                      </ol>
+                      <h5>Close a billing account</h5>
+                      <p>To close a billing account you must be a billing administrator on the account. Billing accounts
+                        cannot be delete</p>
+                      <div class="alert info">
+                        <label class="close" title="close" for="alert3">
+                          <i class="icon-remove"></i>
+                        </label>
+                        <p class="inner"><span>
+                        <strong>Note:</strong><span> Before you close an active billing account, you should consider moving
+                        its associated projects to another billing account or <a
+                                  href="https://cloud.google.com/billing/docs/how-to/modify-project#disable_billing_for_a_project">disable billing</a> for its projects.</span>
+                        </p>
+                      </div>
+                      <p>To close an account:</p>
+                      <ol>
+                        <li class="list">Go to the <a href="https://console.cloud.google.com/">Google Cloud Platform
+                          Console</a>.
+                        </li>
+                        <li class="list">Open the console left side menu and select <strong>Billing</strong>.</li>
+                        <li class="list">If you have more than one billing account, select the billing account name.</li>
+                        <li class="list">Click Close <strong>billing account</strong>.</li>
+                      </ol>
+                      <div class="alert info">
+                        <label class="close" title="close" for="alert3">
+                          <i class="icon-remove"></i>
+                        </label>
+                        <p class="inner"><span>
+                        <strong>Note:</strong> After you close your billing account, we will bill you for the usage you accrued prior to
+                        cancelling your service. This bill will be the last bill you receive, unless you reactivate service.</span>
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </li>
-        <li>
-            <div class = "collapsible-header">Google Maps JavaScript API</div>
-            <div class = "collapsible-body">
-                <div class = "step2">
-
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class = "collapsible-header">Third</div>
-            <div class = "collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-    </ul>
-</div>
-</body>
+          </div>
+        </main>
+      </div>
+    </div>
+    <footer class="demo-footer">
+      <div class="mdl-mini-footer--left-section">
+        <ul class="mdl-mini-footer--link-list">
+          <li><a href="#">Help</a></li>
+          <li><a href="#">Privacy and Terms</a></li>
+          <li><a href="#">User Agreement</a></li>
+        </ul>
+      </div>
+    </footer>
+    <a href="" target="_blank" id="view-source" class="waves-effect waves-light btn">View Source</a>
+  </body>
 </html>
